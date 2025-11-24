@@ -37,8 +37,8 @@ double power(double N, int P)
 
     // Handle negative exponent: N^-P = 1 / (N^P)
     if (P < 0)
-        return 1.0 / myPower(N, -P);
+        return 1.0 / power(N, -P);
 
     // Positive exponent: recursive case
-    return N * myPower(N, P - 1);
+    return N * power(N, P - 1);
 }
