@@ -3,7 +3,7 @@
  * Problem : Example snippet
  * Category: Recursion
  * Language: Java
- * Author  : (Author name or GitHub ID)
+ * Author  : elroy0612
  * Note    : Simple recursive implementation (O(2^N))
  */
 
