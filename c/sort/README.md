@@ -90,3 +90,11 @@ Before sort:
 
 Sorted result:
 1       3       4       8       9
+
+---
+## Reference
+- Introduction to C Programming - Passing Arrays to Functions (Prog. Yong Ju Jung)
+
+---
+## Author
+- YeongWoong Kim
