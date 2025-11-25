@@ -73,10 +73,19 @@ Enter an integer to calculate its factorial  (0~20): 6
 6! = 720
 
 ---
-
 ### Power Example
 
 N^P  (P  must  be  an  integer)  
 Enter  the  base  number  (N):  2  
 Enter  the  exponent  (P):  3
 2^3  is  8
+
+---
+## Reference
+
+- Program Patterns - Recursion, Update/Copy/Move Patterns (Won Kim)
+
+---
+## Author
+
+- YeongWoong Kim
