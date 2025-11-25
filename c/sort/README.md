@@ -53,14 +53,40 @@ gcc selection_sort.c -o selection
 ./selection
 ```
 
-#### Enter the number of elements to sort(1~100): 5
-#### Enter 5 integers:
- 9
- 3
- 4
- 1
- 8
-#### Before sort:
-#### 9		3		4		1		8
-#### Sorted result:
-#### 1		3		4		8		9
+---
+## Example Output
+
+### Bubble Sort Example
+
+Enter the number of elements (1 ~ 100): 6
+Enter 6 integer values:
+10
+3
+25
+7
+1
+4
+
+Data items in original order:
+10      3      25      7      1      4
+
+Data items in ascending order:
+1       3       4       7       10       25
+
+---
+
+### Selection Sort Example
+
+Enter the number of elements to sort(1~100): 5
+Enter 5 integers:
+9
+3
+4
+1
+8
+
+Before sort:
+9       3       4       1       8
+
+Sorted result:
+1       3       4       8       9
