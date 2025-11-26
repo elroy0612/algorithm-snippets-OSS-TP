@@ -9,12 +9,11 @@
 
 import java.util.Scanner;
 
-class selection_sort {
+public class SelectionSort {
     static final int MAX_SIZE = 100;
 
-    // Function prototypes
+    // Selection sort
     static void sort(int[] array, int size) {
-        // Selection sort
         for (int j = 0; j < size; j++) {
             int min = array[j];
             int pos = j;
@@ -51,7 +50,8 @@ class selection_sort {
             return;
         }
 
-        int[] array = new int[MAX_SIZE];
+        // Allocate exactly as many elements as needed (saves memory)
+        int[] array = new int[size];
 
         System.out.println("Enter " + size + " integers:");
         for (int i = 0; i < size; i++) {
@@ -65,5 +65,7 @@ class selection_sort {
 
         System.out.println("\nSorted result:");
         printArray(array, size);
+
+        sc.close();
     }
 }
