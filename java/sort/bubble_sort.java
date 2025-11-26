@@ -9,13 +9,13 @@
 
 import java.util.Scanner;
 
-class bubble_sort {
+class BubbleSort {
     static final int MAX_SIZE = 100;
 
-    // sort an array of integers using the bubble sort algorithm
+    // Bubble sort with reduced inner loop (size - 1 - pass)
     static void bubbleSort(int[] array, int size) {
         for (int pass = 0; pass < size - 1; pass++) {
-            for (int j = 0; j < size - 1; j++) {
+            for (int j = 0; j < size - 1 - pass; j++) {  // <- shrink range each pass
                 if (array[j] > array[j + 1]) {
                     swap(array, j, j + 1);
                 }
@@ -40,16 +40,17 @@ class bubble_sort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] a = new int[MAX_SIZE];
-        int size;
-
         System.out.print("Enter the number of elements (1 ~ " + MAX_SIZE + "): ");
-        size = sc.nextInt();
+        int size = sc.nextInt();
 
         if (size < 1 || size > MAX_SIZE) {
             System.out.println("Invalid size.");
+            sc.close();
             return;
         }
+
+        // allocate exact size to avoid wasting space
+        int[] a = new int[size];
 
         System.out.println("Enter " + size + " integer values:");
         for (int i = 0; i < size; i++) {
@@ -63,5 +64,7 @@ class bubble_sort {
 
         System.out.println("\nData items in ascending order");
         printArray(a, size);
+
+        sc.close();
     }
 }
