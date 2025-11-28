@@ -31,6 +31,10 @@ int main(void)
 
 double power(double N, int P)
 {
+    // Special case
+    if (N == 0)
+        return 0;
+    
     // Base case
     if (P == 0)
         return 1;
