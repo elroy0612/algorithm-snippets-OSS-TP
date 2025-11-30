@@ -31,6 +31,12 @@ int main(void)
 
 double power(double N, int P)
 {
+    // N = 0 and P is negative → undefined
+    if (N == 0 && P < 0) {
+        printf("Error: 0 cannot be raised to a negative power.\n");
+    exit(1);
+    }
+    
     // Base case
     if (P == 0)
         return 1;
