@@ -153,3 +153,11 @@ Note    : O(N) hashmap solution
 
 This repository will be distributed under the MIT License.  
 See the `LICENSE` file for more details.
+
+---
+
+## References
+
+- Yong Ju Jung, *Introduction to C Programming - Passing Arrays to Functions*
+- Won Kim, *Program Patterns - Recursion, Update/Copy/Move Patterns*
+- bugrasarikaya, *bellman-ford-algorithm*
